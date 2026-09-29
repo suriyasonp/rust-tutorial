@@ -1,0 +1,3 @@
+[workspace]
+members = ["solutions/lab01", "solutions/lab02", "solutions/lab03", "solutions/lab04", "solutions/lab05", "solutions/lab06", "solutions/lab08", "solutions/batch-cli", "solutions/sensor-validation", "solutions/log-summary"]
+resolver = "3"

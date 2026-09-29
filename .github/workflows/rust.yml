@@ -1,0 +1,30 @@
+name: Rust tutorial validation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  solutions:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install stable Rust
+        run: rustup toolchain install stable --profile minimal --component rustfmt --component clippy
+      - name: Check formatting is parseable
+        run: cargo fmt --all
+      - name: Compile all targets
+        run: cargo check --workspace --all-targets
+      - name: Test solutions
+        run: cargo test --workspace
+      - name: Lint solutions
+        run: cargo clippy --workspace --all-targets -- -D warnings
+      - name: Build optimized binaries
+        run: cargo build --workspace --release
