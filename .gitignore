@@ -433,3 +433,6 @@ FodyWeavers.xsd
 **/target/
 .DS_Store
 
+# Generated documentation (canonical source is README.md, docs/, and labs/)
+site-src/
+site/

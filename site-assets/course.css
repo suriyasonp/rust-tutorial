@@ -1,0 +1,26 @@
+/* Light editorial styling for long, self-paced technical labs. */
+:root {
+  --course-ink: #172b3f;
+  --course-blue: #0c6aa7;
+  --course-edge: #d9e4eb;
+}
+
+.wy-nav-content { max-width: 1000px; }
+.wy-nav-content-wrap { background: #f8fbfc; }
+.wy-nav-side, .wy-side-nav-search { background: var(--course-ink); }
+.wy-side-nav-search input[type="text"] { border-color: #a8becd; }
+.wy-menu-vertical a { color: #d8e6ef; }
+.wy-menu-vertical li.current a { color: var(--course-ink); }
+.rst-content h1, .rst-content h2, .rst-content h3 { color: var(--course-ink); }
+.rst-content h1 { font-size: 2.1rem; line-height: 1.2; margin-bottom: 1.1rem; }
+.rst-content h2 { border-bottom: 1px solid var(--course-edge); padding-bottom: .35rem; margin-top: 2rem; }
+.rst-content a { color: var(--course-blue); }
+.rst-content p, .rst-content li { line-height: 1.72; }
+.rst-content .highlight { border-radius: 5px; }
+.rst-content table.docutils { width: 100%; }
+.rst-content table.docutils th { background: #e8f3f8; color: var(--course-ink); }
+
+@media screen and (max-width: 768px) {
+  .rst-content h1 { font-size: 1.7rem; }
+  .wy-nav-content { padding: 1.25rem; }
+}
