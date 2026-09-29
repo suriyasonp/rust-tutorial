@@ -1,5 +1,7 @@
 # Rust Hands-On Tutorial
 
+**Read the [course website](https://suriyasonp.github.io/rust-tutorial/) for a navigable version of every lesson.**
+
 Learn Rust by building small, practical tools. This English, self-paced course follows an original Microsoft Learn-inspired structure: **objective → concept → guided exercise → expected result → challenge → review**. It is not an official Microsoft course.
 
 **Audience:** Developers new to Rust; basic experience with functions, conditions, and loops is helpful. C#/.NET and TypeScript developers will find familiar comparisons.  

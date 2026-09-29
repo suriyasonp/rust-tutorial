@@ -1,0 +1,43 @@
+site_name: Rust Hands-On Tutorial
+site_description: A self-paced Rust course with practical labs and runnable solutions
+site_url: https://suriyasonp.github.io/rust-tutorial/
+repo_url: https://github.com/suriyasonp/rust-tutorial
+repo_name: suriyasonp/rust-tutorial
+edit_uri: edit/main/
+docs_dir: site-src
+site_dir: site
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - rust
+    - bash
+    - powershell
+extra_css:
+  - stylesheets/course.css
+markdown_extensions:
+  - tables
+  - fenced_code
+nav:
+  - Start here: index.md
+  - Fundamentals: docs/rust-foundations.md
+  - Setup (Windows and macOS): docs/setup-windows-macos.md
+  - Core labs:
+      - '00 · Environment': labs/00-environment.md
+      - '01 · Variables and types': labs/01-variables.md
+      - '02 · Functions and control flow': labs/02-functions.md
+      - '03 · Ownership and borrowing': labs/03-ownership.md
+      - '04 · Structs and enums': labs/04-domain-models.md
+      - '05 · Collections and Option': labs/05-collections.md
+      - '06 · Result and error handling': labs/06-errors.md
+      - '07 · Modules and traits': labs/07-modules-traits.md
+      - '08 · Testing and quality': labs/08-testing.md
+      - '09 · Batch Order CLI': labs/09-batch-cli.md
+  - More real-world practice:
+      - '10 · Sensor validation': labs/10-sensor-validation.md
+      - '11 · Service log summary': labs/11-log-summary.md
+  - Reference:
+      - Challenge solutions: docs/challenge-solutions.md
+      - Runnable examples: solutions/README.md
+      - Complete workbook: docs/complete-workbook.md
+      - Validation scope: docs/validation.md
