@@ -427,3 +427,9 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+
+# Rust learning workspace
+**/target/
+.DS_Store
+
